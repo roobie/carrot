@@ -1,0 +1,26 @@
+{
+  "name": "carrot",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "repository": "https://github.com/roobie/carrot.git",
+  "author": "Bjorn <bjorn.roberg@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "browserify src/index.js -d -o dist/carrot.js",
+    "prewatch": "npm run build",
+    "watch": "watchify src/index.js -d -o dist/carrot.js",
+    "test": "tap src/**/*.spec.js"
+  },
+  "dependencies": {
+    "akeymirror": "^1.1.0",
+    "bel": "^5.0.2",
+    "csjs": "^1.1.0",
+    "microcomponent": "^3.1.6"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "standard": "^10.0.2",
+    "tap": "^10.7.0",
+    "watchify": "^3.9.0"
+  }
+}
